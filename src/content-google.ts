@@ -1,4 +1,4 @@
-// content.ts
+// content-google.ts
 export {}; // --isolatedModules 모드에서 모듈로 인식시키기 위해 빈 export
 
 const MY_SITE_URL   = 'https://toge.pyrimidines.org';

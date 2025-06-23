@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "토게 인포 검색 변경기",
-  "version": "1.0.0",
-  "description": "Google 검색 결과를 토게 인포로 변경하고, 변경 횟수를 팝업에서 표시하는 크롬 확장",
+  "version": "1.0.1",
+  "description": "Google, Bing, Naver 검색 결과를 ‘토게 인포’로 변경하고, 변경 횟수를 팝업에서 표시합니다.",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -18,10 +18,24 @@
   "content_scripts": [
     {
       "matches": ["https://www.google.com/search*"],
-      "js": ["src/content.ts"],
+      "js": ["src/content-google.ts"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://www.bing.com/search*"],
+      "js": ["src/content-bing.ts"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://search.naver.com/search.naver*"],
+      "js": ["src/content-naver.ts"],
       "run_at": "document_idle"
     }
   ],
   "permissions": ["storage", "tabs", "activeTab"],
-  "host_permissions": ["https://www.google.com/*"]
+  "host_permissions": [
+    "https://www.google.com/*",
+    "https://www.bing.com/*",
+    "https://search.naver.com/*"
+  ]
 }
