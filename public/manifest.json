@@ -15,13 +15,13 @@
   },
 
   "background": {
-    "service_worker": "background.ts"
+    "service_worker": "background.js"
   },
 
   "content_scripts": [
     {
       "matches": ["https://*/*", "http://*/*"],
-      "js": ["content.ts"]
+      "js": ["content.js"]
     }
   ],
 

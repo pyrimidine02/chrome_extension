@@ -1,23 +1,22 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { crx } from '@crxjs/vite-plugin'
+import { crx }   from '@crxjs/vite-plugin'
 import manifest from './public/manifest.json'
 
-// vite.config.ts
 export default defineConfig({
-    plugins: [ react(), crx({ manifest }) ],
+    plugins: [
+        react(),
+        crx({ manifest })   // manifest의 service_worker/content_scripts를 보고 ts → js 번들링
+    ],
     build: {
         rollupOptions: {
             input: {
-                popup:      'src/popup/index.html',
-                options:    'src/options/index.html',   // ← 이 HTML을 읽어서
-                background: 'src/background.ts',        // background.ts → background.js
-                content:    'src/content.ts'            // content.ts → content.js
+                popup:   'src/popup/index.html',
+                options: 'src/options/index.html'
             },
             output: {
-                entryFileNames: '[name].js',            // 해시 없이 [name].js 생성
+                entryFileNames: '[name].js'
             }
         }
     }
 })
-
