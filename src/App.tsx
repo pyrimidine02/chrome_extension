@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// src/App.tsx
+import React from 'react'
+import Popup from './popup/Popup'
+import Options from './options/Options'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+// 공통 레이아웃
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+    <div style={{ padding: 16, fontFamily: 'sans-serif' }}>
+        <header style={{ marginBottom: 16, textAlign: 'center' }}>
+            <h1>My Extension</h1>
+        </header>
+        <main>{children}</main>
     </div>
-  );
+)
+
+const App: React.FC = () => {
+    const title = document.title.trim()
+    let Page: React.ReactNode
+
+    if (title === 'Popup') {
+        Page = <Popup />
+    } else if (title === 'Options') {
+        Page = <Options />
+    } else {
+        Page = <div>알 수 없는 페이지: {title}</div>
+    }
+
+    return <Layout>{Page}</Layout>
 }
 
-export default App;
+export default App
