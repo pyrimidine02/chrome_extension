@@ -1,0 +1,58 @@
+{
+  "../../../../../@crx/manifest": {
+    "file": "assets/crx-manifest.js-C-B8K_pt.js",
+    "name": "crx-manifest.js",
+    "src": "../../../../../@crx/manifest",
+    "isEntry": true
+  },
+  "_browser-polyfill-DMmbowld.js": {
+    "file": "assets/browser-polyfill-DMmbowld.js",
+    "name": "browser-polyfill"
+  },
+  "_content.ts-loader-Dtq7UkyF.js": {
+    "file": "assets/content.ts-loader-Dtq7UkyF.js",
+    "src": "_content.ts-loader-Dtq7UkyF.js"
+  },
+  "_index-CjKUxShG.js": {
+    "file": "assets/index-CjKUxShG.js",
+    "name": "index"
+  },
+  "src/background.ts": {
+    "file": "assets/background.ts-DOQZOjnF.js",
+    "name": "background.ts",
+    "src": "src/background.ts",
+    "isEntry": true,
+    "imports": [
+      "_browser-polyfill-DMmbowld.js"
+    ]
+  },
+  "src/content.ts": {
+    "file": "assets/content.ts-DFLt5twY.js",
+    "name": "content.ts",
+    "src": "src/content.ts",
+    "isEntry": true,
+    "imports": [
+      "_browser-polyfill-DMmbowld.js"
+    ]
+  },
+  "src/options/index.html": {
+    "file": "options.js",
+    "name": "options",
+    "src": "src/options/index.html",
+    "isEntry": true,
+    "imports": [
+      "_index-CjKUxShG.js",
+      "_browser-polyfill-DMmbowld.js"
+    ]
+  },
+  "src/popup/index.html": {
+    "file": "popup.js",
+    "name": "popup",
+    "src": "src/popup/index.html",
+    "isEntry": true,
+    "imports": [
+      "_index-CjKUxShG.js",
+      "_browser-polyfill-DMmbowld.js"
+    ]
+  }
+}
