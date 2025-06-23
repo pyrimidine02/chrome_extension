@@ -22,7 +22,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "vite build",
-    "dev":   "vite",
+    "dev": "vite",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -46,6 +46,7 @@
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.0.2",
+    "@types/chrome": "^0.0.326",
     "@types/webextension-polyfill": "^0.12.3",
     "@vitejs/plugin-react": "^4.6.0",
     "vite-plugin-static-copy": "^3.0.2",

@@ -1,1 +1,0 @@
-import{b as e}from"./browser-polyfill-DMmbowld.js";e.runtime.onInstalled.addListener(()=>{console.log("Extension Installed"),e.storage.sync.set({count:0,themeColor:"#ff0000"})});e.runtime.onMessage.addListener((o,n,t)=>(o==="GET_THEME"&&e.storage.sync.get("themeColor").then(r=>t(r.themeColor??"#ff0000")).catch(()=>t("#ff0000")),!0));

@@ -1,1 +1,0 @@
-import{b as o}from"./browser-polyfill-DMmbowld.js";window.addEventListener("load",()=>{o.storage.sync.get("themeColor").then(e=>{document.body.style.border=`4px solid ${e.themeColor||"#ff0000"}`})});o.runtime.sendMessage("GET_THEME").then(e=>{const{themeColor:r}=e;console.log("Theme from background:",r)});

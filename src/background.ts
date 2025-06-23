@@ -1,23 +1,21 @@
 // src/background.ts
 import browser from 'webextension-polyfill'
 
+// 설치 시 기본 설정
 browser.runtime.onInstalled.addListener(() => {
     console.log('Extension Installed')
     browser.storage.sync.set({ count: 0, themeColor: '#ff0000' })
 })
 
-browser.runtime.onMessage.addListener((
-    message: unknown,
-    sender: browser.Runtime.MessageSender,
-    sendResponse: (response?: any) => void
-) => {
-    if (message === 'GET_THEME') {
-        browser.storage.sync
-            .get('themeColor')
-            .then(items => sendResponse((items.themeColor as string) ?? '#ff0000'))
-            .catch(() => sendResponse('#ff0000'))
+// background.ts
+chrome.runtime.onMessage.addListener((msg, _sender, _resp) => {
+    if (msg.type === 'incrementCount') {
+        chrome.storage.local.get({ count: 0 }, data => {
+            const next = (data.count as number) + 1;
+            chrome.storage.local.set({ count: next });
+        });
     }
-    // 리턴 타입 주석을 제거했기 때문에 TS가 return true; 만으로
-    // "이 함수는 항상 true를 반환한다"라고 추론합니다.
-    return true
-})
+});
+
+
+

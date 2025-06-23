@@ -1,6 +1,6 @@
 {
   "../../../../../@crx/manifest": {
-    "file": "assets/crx-manifest.js-C-B8K_pt.js",
+    "file": "assets/crx-manifest.js-w99QEfoD.js",
     "name": "crx-manifest.js",
     "src": "../../../../../@crx/manifest",
     "isEntry": true
@@ -9,16 +9,12 @@
     "file": "assets/browser-polyfill-DMmbowld.js",
     "name": "browser-polyfill"
   },
-  "_content.ts-loader-Dtq7UkyF.js": {
-    "file": "assets/content.ts-loader-Dtq7UkyF.js",
-    "src": "_content.ts-loader-Dtq7UkyF.js"
-  },
   "_index-CjKUxShG.js": {
     "file": "assets/index-CjKUxShG.js",
     "name": "index"
   },
   "src/background.ts": {
-    "file": "assets/background.ts-DOQZOjnF.js",
+    "file": "assets/background.ts-CMmn9oQF.js",
     "name": "background.ts",
     "src": "src/background.ts",
     "isEntry": true,
@@ -27,13 +23,10 @@
     ]
   },
   "src/content.ts": {
-    "file": "assets/content.ts-DFLt5twY.js",
+    "file": "assets/content.ts-Bi1dhHjH.js",
     "name": "content.ts",
     "src": "src/content.ts",
-    "isEntry": true,
-    "imports": [
-      "_browser-polyfill-DMmbowld.js"
-    ]
+    "isEntry": true
   },
   "src/options/index.html": {
     "file": "options.js",
@@ -51,8 +44,7 @@
     "src": "src/popup/index.html",
     "isEntry": true,
     "imports": [
-      "_index-CjKUxShG.js",
-      "_browser-polyfill-DMmbowld.js"
+      "_index-CjKUxShG.js"
     ]
   }
 }
