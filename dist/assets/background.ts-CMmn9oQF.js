@@ -1,1 +1,0 @@
-import{b as e}from"./browser-polyfill-DMmbowld.js";e.runtime.onInstalled.addListener(()=>{console.log("Extension Installed"),e.storage.sync.set({count:0,themeColor:"#ff0000"})});chrome.runtime.onMessage.addListener((o,s,r)=>{o.type==="incrementCount"&&chrome.storage.local.get({count:0},t=>{const n=t.count+1;chrome.storage.local.set({count:n})})});

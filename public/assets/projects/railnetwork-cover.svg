@@ -1,0 +1,48 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="600" rx="48" fill="url(#paint0_linear)"/>
+  <g filter="url(#filter0_f)">
+    <circle cx="280" cy="180" r="180" fill="url(#paint1_radial)"/>
+  </g>
+  <g filter="url(#filter1_f)">
+    <circle cx="1010" cy="420" r="210" fill="url(#paint2_radial)"/>
+  </g>
+  <path d="M140 430C220 350 320 340 400 420C480 500 600 490 700 420C800 350 900 370 980 420" stroke="white" stroke-width="6" stroke-linecap="round" stroke-opacity="0.35" stroke-dasharray="18 18"/>
+  <path d="M160 430H980" stroke="white" stroke-width="3" stroke-opacity="0.2" stroke-dasharray="8 14"/>
+  <g filter="url(#filter2_d)">
+    <rect x="220" y="220" width="320" height="120" rx="24" fill="rgba(16, 21, 64, 0.55)"/>
+    <text x="260" y="275" fill="white" font-size="40" font-family="'Pretendard', 'Noto Sans KR', sans-serif" font-weight="600">실시간 철도 정보 플랫폼</text>
+    <text x="260" y="320" fill="rgba(255,255,255,0.8)" font-size="22" font-family="'Pretendard', 'Noto Sans KR', sans-serif">RailNetwork</text>
+  </g>
+  <g filter="url(#filter3_d)">
+    <rect x="660" y="330" width="320" height="120" rx="24" fill="rgba(16, 21, 64, 0.55)"/>
+    <text x="700" y="385" fill="white" font-size="34" font-family="'Pretendard', 'Noto Sans KR', sans-serif" font-weight="500">도착 정보 예측 정확도</text>
+    <text x="700" y="428" fill="rgba(255,255,255,0.8)" font-size="22" font-family="'Pretendard', 'Noto Sans KR', sans-serif">지연 없는 업데이트</text>
+  </g>
+  <defs>
+    <filter id="filter0_f" x="-100" y="-200" width="760" height="760" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="90"/>
+    </filter>
+    <filter id="filter1_f" x="650" y="60" width="720" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="110"/>
+    </filter>
+    <filter id="filter2_d" x="200" y="204" width="360" height="160" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="filter3_d" x="640" y="314" width="360" height="160" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <linearGradient id="paint0_linear" x1="80" y1="84" x2="1120" y2="516" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F71FF"/>
+      <stop offset="0.45" stop-color="#5B4BFF"/>
+      <stop offset="1" stop-color="#FF8A65"/>
+    </linearGradient>
+    <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(280 180) rotate(90) scale(200)">
+      <stop stop-color="#88A7FF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#88A7FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1010 420) rotate(90) scale(230)">
+      <stop stop-color="#FFB38A" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FFB38A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

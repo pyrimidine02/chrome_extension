@@ -1,0 +1,46 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="600" rx="48" fill="url(#paint0_linear)"/>
+  <g filter="url(#filter0_f)">
+    <circle cx="320" cy="420" r="220" fill="url(#paint1_radial)"/>
+  </g>
+  <g filter="url(#filter1_f)">
+    <circle cx="900" cy="200" r="200" fill="url(#paint2_radial)"/>
+  </g>
+  <path d="M160 420H1040" stroke="rgba(255,255,255,0.4)" stroke-width="8" stroke-linecap="round" stroke-dasharray="20 26"/>
+  <g filter="url(#filter2_d)">
+    <rect x="280" y="220" width="320" height="140" rx="28" fill="rgba(18, 22, 52, 0.55)"/>
+    <text x="320" y="272" fill="white" font-size="42" font-family="'Pretendard','Noto Sans KR',sans-serif" font-weight="600">Setlist Companion</text>
+    <text x="320" y="316" fill="rgba(255,255,255,0.85)" font-size="22" font-family="'Pretendard','Noto Sans KR',sans-serif">오프라인 대응 공연 툴</text>
+  </g>
+  <g filter="url(#filter3_d)">
+    <rect x="660" y="320" width="320" height="130" rx="28" fill="rgba(18, 22, 52, 0.55)"/>
+    <text x="700" y="372" fill="white" font-size="30" font-family="'Pretendard','Noto Sans KR',sans-serif" font-weight="500">빠른 세트리스트 편성</text>
+    <text x="700" y="412" fill="rgba(255,255,255,0.85)" font-size="22" font-family="'Pretendard','Noto Sans KR',sans-serif">팀 공유 링크 지원</text>
+  </g>
+  <defs>
+    <filter id="filter0_f" x="-40" y="60" width="720" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="120"/>
+    </filter>
+    <filter id="filter1_f" x="560" y="-140" width="680" height="680" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="120"/>
+    </filter>
+    <filter id="filter2_d" x="260" y="204" width="360" height="180" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <filter id="filter3_d" x="640" y="304" width="360" height="170" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <linearGradient id="paint0_linear" x1="160" y1="520" x2="1120" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF6CAB"/>
+      <stop offset="1" stop-color="#7367F0"/>
+    </linearGradient>
+    <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(320 420) rotate(90) scale(240)">
+      <stop stop-color="#FF9AC9" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FF9AC9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 200) rotate(90) scale(220)">
+      <stop stop-color="#9DEBFF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#9DEBFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

@@ -1,0 +1,10 @@
+- slug: "portable-ecg"
+  name: "Portable ECG Monitor 연구"
+  affiliation: "연구참여"
+  period: "2023.07 – 2023.11"
+  focus: "일반 엣지 하드웨어에서 부정맥 탐지를 수행하는 파이프라인"
+  summary: "임상 프로토콜을 근거로 MIT-BIH ECG 데이터를 전처리하고, 엣지 추론용 TensorFlow Lite Micro 모델을 설계·경량화했습니다."
+  outcomes:
+    - "논문 내 파형 주석과 장비 설정을 분석해 QRS 정점(1250–1500) 탐지 → 85px/15px 윈도 크롭 → 96×96 리사이즈 → 노이즈 제거 파이프라인을 구축하고 정상/부정맥 패턴 대비를 자동화했습니다."
+    - "2개 합성곱·풀링 계층과 ReLU·Softmax 분류기로 구성된 CNN을 구현하고, 필터 수를 3개로 조정한 뒤 8-bit 양자화를 적용해 503KB TensorFlow Lite Micro 바이너리와 45ms 추론 속도를 달성했습니다."
+    - "자가 수집 ECG로 재학습 루프를 만들어 TF Lite 정확도를 53.75%→83.55%로 끌어올리고, CICS’23 ‘Portable ECG Monitor on Edge Device using TensorFlow Lite’ 발표 자료 집필에 기여했습니다."

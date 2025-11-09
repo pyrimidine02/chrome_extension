@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" rx="32" fill="#111827"/>
+  <text x="640" y="64" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="34" fill="#F9FAFB" font-weight="600">girlsbandtabi · Solo Build Flow</text>
+  <text x="640" y="104" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#9CA3AF">AI vibe coding + Next.js CMS for fan pilgrimage data</text>
+
+  <rect x="140" y="160" width="300" height="160" rx="24" fill="#1F2937" stroke="#F472B6" stroke-width="2"/>
+  <text x="290" y="206" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="22" fill="#F9FAFB" font-weight="600">Idea Capture</text>
+  <text x="290" y="238" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="16" fill="#F9A8D4">Discord 심층 인터뷰</text>
+  <text x="290" y="268" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="14" fill="#9CA3AF">팬 피드백 → YAML 업데이트</text>
+
+  <rect x="490" y="160" width="300" height="160" rx="24" fill="#1F2937" stroke="#38BDF8" stroke-width="2"/>
+  <text x="640" y="206" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="22" fill="#F9FAFB" font-weight="600">AI Vibe Coding</text>
+  <text x="640" y="238" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="16" fill="#BAE6FD">Cursor + Copilot pair</text>
+  <text x="640" y="268" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="14" fill="#94A3B8">Prompt ↔ commit 루프</text>
+
+  <rect x="840" y="160" width="300" height="160" rx="24" fill="#1F2937" stroke="#34D399" stroke-width="2"/>
+  <text x="990" y="206" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="22" fill="#F9FAFB" font-weight="600">Delivery</text>
+  <text x="990" y="238" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="16" fill="#BBF7D0">Next.js Static Export</text>
+  <text x="990" y="268" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="14" fill="#9CA3AF">Netlify Edge deploy</text>
+
+  <line x1="440" y1="240" x2="490" y2="240" stroke="#F9FAFB" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="790" y1="240" x2="840" y2="240" stroke="#F9FAFB" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <rect x="280" y="380" width="720" height="220" rx="28" fill="#1F2937" stroke="#6366F1" stroke-width="2"/>
+  <text x="640" y="430" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="24" fill="#E0E7FF" font-weight="600">Data Orchestration</text>
+  <text x="640" y="466" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="16" fill="#C7D2FE">YAML → REST → SSG</text>
+  <text x="640" y="498" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="14" fill="#9CA3AF">Tag geo search · event timeline · gallery CDN</text>
+  <text x="640" y="530" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="14" fill="#A855F7">Solo ops: issue triage, AI-assisted refactor, monitoring</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0L8 4L0 8V0Z" fill="#F9FAFB"/>
+    </marker>
+  </defs>
+</svg>

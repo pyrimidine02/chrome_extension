@@ -1,0 +1,14 @@
+- school: "인하대학교"
+  program: "컴퓨터공학과 학사 과정"
+  period: "2023.03 – 재학 중"
+  location: "인천, 대한민국"
+  notes:
+    - "IGRUS / CTP 동아리 운영진으로 참여해 알고리즘 강의 커리큘럼을 체계화했습니다."
+    - "40여 명의 학부생에게 C++과 Python 문제 해결 강의를 진행했습니다."
+- school: "Google Machine Learning Bootcamp 2024"
+  program: "머신러닝 트랙 수료"
+  period: "2024.07 - 2024.11"
+  location: "서울, 대한민국"
+  notes:
+    - "Gemma2 - 2B 모델을 파인튜닝 해 BOJ 알고리즘 문제를 추천해주는 프로젝트를 수행했습니다."
+    - "Kaggle Binary Classification of Insurance Cross Selling 과제를 상위 3.7%로 통과했습니다."

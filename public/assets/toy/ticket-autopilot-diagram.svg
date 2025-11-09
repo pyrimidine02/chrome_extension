@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" rx="36" fill="#0F172A"/>
+  <text x="640" y="72" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="36" font-weight="600" fill="#E2E8F0">Ticket Autopilot · Melon Ticket Automation</text>
+  <text x="640" y="110" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#94A3B8">Console Script → Proxy Rotation → Playwright Farm → Slack/SMS Alerts</text>
+
+  <!-- Cluster: Console Script -->
+  <rect x="80" y="180" width="300" height="320" rx="24" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+  <text x="230" y="220" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="22" font-weight="600" fill="#BAE6FD">브라우저 콘솔 스크립트</text>
+  <rect x="110" y="240" width="240" height="80" rx="14" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="230" y="280" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="16" fill="#E2E8F0">AMD require hook</text>
+  <text x="230" y="302" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="13" fill="#94A3B8">reservationService · commonCode</text>
+  <rect x="110" y="340" width="240" height="80" rx="14" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="230" y="378" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="16" fill="#E2E8F0">상태 머신 (step 0→2)</text>
+  <text x="230" y="400" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="13" fill="#94A3B8">날짜·회차 선택, 예약 버튼 클릭</text>
+  <rect x="110" y="440" width="240" height="60" rx="14" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="230" y="470" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="14" fill="#94A3B8">ASCII spinner 로그 · 4ms 폴링</text>
+
+  <!-- Cluster: Proxy Rotation -->
+  <rect x="440" y="220" width="220" height="220" rx="24" fill="#1E293B" stroke="#FBBF24" stroke-width="2"/>
+  <text x="550" y="258" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="22" font-weight="600" fill="#FDE68A">프록시 & 큐</text>
+  <rect x="470" y="280" width="160" height="70" rx="14" fill="#0F172A" stroke="#FBBF24" stroke-width="1.5"/>
+  <text x="550" y="320" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="15" fill="#FCD34D">프록시 회전</text>
+  <rect x="470" y="360" width="160" height="70" rx="14" fill="#0F172A" stroke="#FBBF24" stroke-width="1.5"/>
+  <text x="550" y="400" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="15" fill="#FCD34D">재시도 큐</text>
+
+  <!-- Cluster: Playwright Farm -->
+  <rect x="720" y="160" width="260" height="300" rx="24" fill="#1E293B" stroke="#34D399" stroke-width="2"/>
+  <text x="850" y="200" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="22" font-weight="600" fill="#BBF7D0">Playwright 팜</text>
+  <rect x="750" y="230" width="200" height="70" rx="14" fill="#0F172A" stroke="#34D399" stroke-width="1.5"/>
+  <text x="850" y="270" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="16" fill="#BBF7D0">시나리오 실행</text>
+  <rect x="750" y="310" width="200" height="70" rx="14" fill="#0F172A" stroke="#34D399" stroke-width="1.5"/>
+  <text x="850" y="350" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="16" fill="#BBF7D0">좌석 확보 모니터링</text>
+  <rect x="750" y="390" width="200" height="70" rx="14" fill="#0F172A" stroke="#34D399" stroke-width="1.5"/>
+  <text x="850" y="430" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="16" fill="#BBF7D0">Captcha/대기열 상태</text>
+
+  <!-- Cluster: Alert Stack -->
+  <rect x="1020" y="260" width="160" height="200" rx="24" fill="#1E293B" stroke="#A855F7" stroke-width="2"/>
+  <text x="1100" y="300" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="20" font-weight="600" fill="#E9D5FF">알림 스택</text>
+  <rect x="1040" y="320" width="120" height="60" rx="14" fill="#0F172A" stroke="#A855F7" stroke-width="1.5"/>
+  <text x="1100" y="350" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="14" fill="#E9D5FF">Slack</text>
+  <rect x="1040" y="390" width="120" height="60" rx="14" fill="#0F172A" stroke="#A855F7" stroke-width="1.5"/>
+  <text x="1100" y="420" text-anchor="middle" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="14" fill="#E9D5FF">SMS Webhook</text>
+
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#E2E8F0"/>
+    </marker>
+  </defs>
+  <path d="M380 330 H440" stroke="#E2E8F0" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M660 330 H720" stroke="#E2E8F0" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M980 360 H1020" stroke="#E2E8F0" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M590 440 C680 520 940 520 1100 440" stroke="#FBBF24" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+
+  <!-- Legend -->
+  <rect x="80" y="590" width="1120" height="70" rx="20" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="120" y="632" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="14" fill="#BAE6FD">상태 머신</text>
+  <text x="300" y="632" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="14" fill="#FCD34D">프록시/큐</text>
+  <text x="520" y="632" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="14" fill="#BBF7D0">Playwright 실행</text>
+  <text x="800" y="632" font-family="'Inter','Apple SD Gothic Neo',sans-serif" font-size="14" fill="#E9D5FF">알림</text>
+</svg>

@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-secondary text-ink font-sans antialiased;
+}
+
+a {
+  @apply text-primary transition-colors duration-150 ease-out;
+}
+
+a:hover {
+  @apply text-primary/80;
+}
+
+.section-title {
+  @apply text-3xl font-semibold tracking-tight text-ink;
+}
+
+.section-subtitle {
+  @apply text-base text-slate;
+}
