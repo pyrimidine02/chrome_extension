@@ -11,8 +11,8 @@ interface ContactCTAProps {
  * 리크루터와 협업자를 위한 마무리 연락 수단을 제공합니다. (KO)
  */
 export function ContactCTA({ email, links }: ContactCTAProps) {
-  const title = '함께 새로운 가치를 만들어봅시다';
-  const description = '합류 제안, 제품 과제, 아이디어를 들려주세요. 영업일 기준 2일 이내 답변드립니다.';
+  const title = '채용담당자 분들의 연락을 기다립니다';
+  const description = '채용 절차 안내나 과제 공유를 보내주시면 바로 검토하고 응답드리겠습니다.';
 
   return (
     <section
