@@ -1,0 +1,39 @@
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="url(#gradient)"/>
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Map Icon Background -->
+  <circle cx="100" cy="100" r="40" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <path d="M100 80 L110 90 L100 100 L90 90 Z" fill="white" opacity="0.8"/>
+  <circle cx="100" cy="85" r="8" fill="white" opacity="0.9"/>
+  
+  <!-- Location Pins -->
+  <circle cx="150" cy="60" r="3" fill="#ff6b9d"/>
+  <circle cx="180" cy="80" r="3" fill="#4ecdc4"/>
+  <circle cx="200" cy="120" r="3" fill="#45b7d1"/>
+  <circle cx="160" cy="140" r="3" fill="#96ceb4"/>
+  <circle cx="130" cy="160" r="3" fill="#ffeaa7"/>
+  
+  <!-- Connection Lines -->
+  <path d="M150 60 L180 80 L200 120 L160 140 L130 160" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none"/>
+  
+  <!-- Title -->
+  <text x="220" y="70" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="bold">Girls Band</text>
+  <text x="220" y="100" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="bold">Tabi LBS</text>
+  
+  <!-- Subtitle -->
+  <text x="220" y="125" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="14">Location-Based Services</text>
+  <text x="220" y="145" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="14">Platform for Bands</text>
+  
+  <!-- Tech Stack -->
+  <rect x="220" y="160" width="50" height="20" rx="10" fill="rgba(255,255,255,0.2)"/>
+  <text x="245" y="173" fill="white" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Kotlin</text>
+  
+  <rect x="280" y="160" width="60" height="20" rx="10" fill="rgba(255,255,255,0.2)"/>
+  <text x="310" y="173" fill="white" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">PostGIS</text>
+</svg>

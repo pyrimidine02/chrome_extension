@@ -1,0 +1,36 @@
+- name: "Core Languages"
+  description: "주력 프로그래밍 언어"
+  skills:
+    - "C++ (STL · 알고리즘 최적화)"
+    - "Python (데이터/ML/백엔드)"
+    - "Kotlin"
+- name: "Learning Stack" 
+  description: "습득중인 기술 스택"
+  skills:
+    - "JavaScript · Node.js"
+    - "TypeScript · Next.js"
+    - "React · Express"
+    - "Spring Boot 3"
+- name: "Data & Database"
+  description: "데이터베이스와 데이터 처리"
+  skills:
+    - "PostgreSQL 15 · PostGIS 3"
+    - "Redis 7 (Session/L2 Cache)"
+    - "MongoDB · Supabase"
+- name: "Cloud & Infrastructure"
+  description: "클라우드 및 인프라 운영"
+  skills:
+    - "AWS EC2 · S3 · RDS"
+    - "Docker / Docker Compose"
+    - "Cloudflare R2 · Nginx"
+- name: "ML & Data Science"
+  description: "머신러닝 및 데이터 분석"
+  skills:
+    - "PyTorch · TensorFlow"
+    - "scikit-learn · XGBoost"
+    - "Pandas · NumPy · Matplotlib"
+- name: "Tooling & DevOps"
+  description: "개발 도구 및 프로세스"
+  skills:
+    - "Git · GitHub Actions"
+    - "OpenAPI 3.1 · Swagger"

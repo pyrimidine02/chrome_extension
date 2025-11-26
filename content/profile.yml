@@ -1,11 +1,13 @@
 name: "손호영"
-title: "소프트웨어 엔지니어"
-summary: "실시간 지하철 데이터 역공학부터 엣지 ECG 모델 최적화까지 필요한 기술을 바로 익혀 문제를 풀어내는 엔지니어입니다."
+title: "Backend & Platform Engineer"
+summary: |
+  8,852명이 사용하는 서울 지하철 실시간 추적 서비스와 위치 기반 성지순례 플랫폼을 설계·구축한 엔지니어입니다.
+  RailNetwork로 25M+ 이벤트를 처리하는 고성능 백엔드를, Girls Band Tabi로 180+ API의 확장 가능한 LBS 시스템을 완성했습니다.
 location: "인천, 대한민국"
 avatar: "/assets/12C4660C-7D19-456B-B73A-B55A9C62C441_1_201_a.jpeg"
 email: "tls1234568@naver.com"
 links:
-  - label: "깃허브"
+  - label: "GitHub"
     url: "https://github.com/pyrimidine02"
   - label: "이력서"
-    url: "/assets/SonHoyoung_Resume.docx"
+    url: "/cv.pdf"

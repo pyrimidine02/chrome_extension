@@ -1,0 +1,822 @@
+# ----------------------------------------
+# 보고서 개요
+# 계정: Railnetwork
+# 속성: railnetwork-app
+# ----------------------------------------
+#  
+# 시작일: 20250101
+# 종료일: 20251125
+활성 사용자,새 사용자 수,활성 사용자당 평균 참여 시간,이벤트 수
+8852,6018,11445.697921373701,25023823
+
+#  
+# 시작일: 20250101
+# 종료일: 20251125
+페이지 제목 및 화면 클래스,조회수,활성 사용자,이벤트 수,이탈률
+MainActivity,799017,6608,13434408,0.06096216165019315
+FlutterViewController,168008,2308,2413155,0.08908490905394204
+AdActivity,7223,1493,7337,0.003429355281207133
+SKStoreProductViewController,3538,527,5071,0.00921942224953903
+ServiceCardContainerViewController,1994,478,3876,0.008492569002123142
+GADBrowserViewController,661,50,1108,0.015350877192982455
+SFSafariViewController,487,213,1076,0.024793388429752067
+WebViewActivity,48,24,81,0
+UIAlertController,30,21,66,0
+NotificationHandlerActivity,5,5,5,0
+GADDebugOptionsViewController,3,2,3,0
+UIReferenceLibraryViewController,2,2,3,0
+STWebpageController,1,1,6,0
+
+#  
+# 시작일: 20250101
+# 종료일: 20251125
+첫 사용자 소스 / 매체,활성 사용자
+google-play / organic,4863
+(direct) / (none),4100
+google / organic,99
+
+#  
+# 시작일: 20250101
+# 종료일: 20251125
+세션 소스/매체,세션수
+(direct) / (none),416726
+google-play / organic,158105
+google / organic,1745
+
+#  
+# 시작일: 20250101
+# 종료일: 20251125
+N일,returning,new
+0000,342,70
+0001,394,97
+0002,400,89
+0003,340,75
+0004,346,75
+0005,398,82
+0006,398,82
+0007,403,75
+0008,408,81
+0009,407,69
+0010,378,87
+0011,323,70
+0012,390,80
+0013,413,96
+0014,401,70
+0015,403,86
+0016,427,94
+0017,365,76
+0018,365,82
+0019,395,92
+0020,400,79
+0021,400,93
+0022,423,98
+0023,423,88
+0024,379,72
+0025,331,70
+0026,339,71
+0027,339,76
+0028,312,66
+0029,313,65
+0030,389,87
+0031,403,103
+0032,366,89
+0033,414,101
+0034,406,97
+0035,415,108
+0036,428,92
+0037,500,119
+0038,419,98
+0039,332,80
+0040,418,89
+0041,449,99
+0042,474,102
+0043,445,104
+0044,417,93
+0045,410,100
+0046,386,91
+0047,467,108
+0048,476,126
+0049,481,112
+0050,476,105
+0051,473,89
+0052,441,106
+0053,393,96
+0054,447,93
+0055,476,121
+0056,463,96
+0057,476,99
+0058,487,110
+0059,440,115
+0060,399,84
+0061,435,93
+0062,561,121
+0063,556,146
+0064,569,141
+0065,533,108
+0066,491,103
+0067,470,116
+0068,588,127
+0069,569,131
+0070,560,132
+0071,587,138
+0072,566,117
+0073,501,115
+0074,455,87
+0075,599,124
+0076,648,144
+0077,566,108
+0078,603,129
+0079,576,105
+0080,526,109
+0081,683,206
+0082,622,128
+0083,619,133
+0084,604,138
+0085,604,142
+0086,618,142
+0087,525,117
+0088,509,104
+0089,659,136
+0090,612,133
+0091,620,126
+0092,616,114
+0093,565,118
+0094,476,119
+0095,496,89
+0096,603,125
+0097,600,135
+0098,619,137
+0099,614,135
+0100,647,141
+0101,501,104
+0102,480,97
+0103,640,143
+0104,638,143
+0105,640,143
+0106,649,154
+0107,627,177
+0108,509,117
+0109,530,110
+0110,677,160
+0111,705,169
+0112,694,154
+0113,679,163
+0114,678,155
+0115,584,140
+0116,523,114
+0117,701,147
+0118,686,137
+0119,706,148
+0120,730,174
+0121,760,182
+0122,657,173
+0123,582,151
+0124,560,147
+0125,583,120
+0126,715,158
+0127,738,173
+0128,724,177
+0129,603,133
+0130,613,147
+0131,753,176
+0132,708,156
+0133,740,176
+0134,734,167
+0135,733,158
+0136,646,156
+0137,613,158
+0138,725,155
+0139,758,182
+0140,732,162
+0141,728,161
+0142,741,156
+0143,578,147
+0144,572,142
+0145,771,175
+0146,750,171
+0147,767,199
+0148,792,204
+0149,752,181
+0150,752,193
+0151,621,140
+0152,771,199
+0153,639,176
+0154,841,232
+0155,797,222
+0156,665,166
+0157,661,178
+0158,585,144
+0159,788,170
+0160,790,207
+0161,788,191
+0162,851,224
+0163,793,187
+0164,650,169
+0165,606,158
+0166,746,190
+0167,751,198
+0168,737,189
+0169,720,178
+0170,756,197
+0171,643,166
+0172,613,137
+0173,694,184
+0174,702,189
+0175,696,188
+0176,696,174
+0177,736,184
+0178,662,171
+0179,598,167
+0180,705,178
+0181,764,216
+0182,795,207
+0183,712,175
+0184,759,215
+0185,726,181
+0186,642,184
+0187,681,170
+0188,715,183
+0189,720,198
+0190,719,200
+0191,744,184
+0192,696,182
+0193,628,166
+0194,667,177
+0195,706,191
+0196,654,165
+0197,894,221
+0198,742,207
+0199,664,198
+0200,690,200
+0201,704,187
+0202,735,187
+0203,726,174
+0204,683,167
+0205,707,182
+0206,674,178
+0207,584,154
+0208,674,166
+0209,668,164
+0210,667,169
+0211,720,188
+0212,732,198
+0213,639,185
+0214,606,168
+0215,678,177
+0216,685,170
+0217,673,178
+0218,691,189
+0219,746,201
+0220,621,163
+0221,582,147
+0222,686,167
+0223,660,180
+0224,749,186
+0225,736,213
+0226,646,185
+0227,655,192
+0228,610,139
+0229,704,184
+0230,679,186
+0231,702,201
+0232,722,202
+0233,733,202
+0234,688,188
+0235,614,167
+0236,709,184
+0237,723,201
+0238,720,193
+0239,714,191
+0240,734,188
+0241,765,197
+0242,673,189
+0243,790,219
+0244,855,219
+0245,809,211
+0246,861,217
+0247,901,240
+0248,721,212
+0249,729,186
+0250,840,217
+0251,863,244
+0252,862,220
+0253,883,226
+0254,905,229
+0255,783,211
+0256,742,189
+0257,918,240
+0258,884,250
+0259,886,214
+0260,905,226
+0261,860,252
+0262,779,214
+0263,786,213
+0264,842,230
+0265,868,230
+0266,826,214
+0267,874,249
+0268,870,234
+0269,846,239
+0270,695,190
+0271,992,288
+0272,941,228
+0273,883,234
+0274,957,253
+0275,755,196
+0276,756,203
+0277,662,173
+0278,618,129
+0279,663,161
+0280,730,183
+0281,704,184
+0282,838,231
+0283,704,192
+0284,721,181
+0285,884,225
+0286,967,240
+0287,874,245
+0288,916,224
+0289,909,243
+0290,792,209
+0291,757,192
+0292,906,240
+0293,905,236
+0294,1069,300
+0295,924,226
+0296,943,246
+0297,854,244
+0298,783,195
+0299,931,289
+0300,1002,289
+0301,1002,297
+0302,1097,365
+0303,1004,294
+0304,943,271
+0305,809,214
+0306,982,279
+0307,1114,311
+0308,1037,293
+0309,1139,288
+0310,1027,283
+0311,896,260
+0312,874,242
+0313,1065,293
+0314,1057,285
+0315,1142,299
+0316,1108,294
+0317,1053,278
+0318,922,259
+0319,873,232
+0320,1079,272
+0321,1203,374
+0322,1107,261
+0323,1111,279
+0324,1099,311
+0325,923,264
+0326,862,211
+0327,1082,323
+0328,1255,359
+
+# 플랫폼별 활동 비교
+# 시작일: 20250101
+# 종료일: 20251125
+플랫폼,주요 이벤트
+Android,4269
+iOS,1749
+
+#  
+# 시작일: 20250101
+# 종료일: 20251125
+시/군/구,활성 사용자
+Seoul,7252
+Busan,1996
+Incheon,1557
+Suwon-si,936
+Daegu,924
+Goyang-si,819
+Ansan-si,795
+Bucheon-si,764
+Cheonan-si,615
+Namyangju-si,613
+Seongnam-si,592
+Hwaseong-si,548
+Siheung-si,494
+Yongin-si,485
+Gunpo-si,478
+Pyeongtaek-si,442
+Anyang-si,440
+Uijeongbu-si,421
+Asan-si,354
+Daejeon,317
+Gwangmyeong-si,273
+Paju-si,270
+Gwangju,234
+Yangju-si,231
+Gwacheon-si,216
+Osan-si,198
+Guri-si,187
+Ulsan,187
+Gimpo-si,178
+Uiwang-si,177
+Dongducheon-si,166
+Hanam-si,146
+Gwangju-si,145
+Yangpyeong-gun,122
+Wonju-si,105
+Jeju-si,103
+Changwon-si,91
+Pohang-si,91
+Gapyeong-gun,86
+Jeonju-si,86
+Cheongju-si,85
+Chuncheon-si,81
+Gyeongsan-si,72
+Anseong-si,65
+Icheon-si,65
+Yeoncheon-gun,64
+Singapore,56
+Yangsan-si,54
+Yeongju-si,52
+Gyeongju-si,50
+Osaka,50
+Pyeongchang-gun,48
+Sejong-si,45
+Yeoju-si,45
+Gumi-si,42
+Donghae-si,39
+Gangneung-si,39
+Gimhae-si,37
+Seogwipo-si,37
+Pocheon-si,33
+Yokohama,33
+Seosan-si,31
+Mountain View,30
+Suncheon-si,30
+Shinjuku City,29
+Gunsan-si,28
+Iksan-si,28
+Chilgok-gun,27
+Gongju-si,27
+Minato City,27
+Sokcho-si,27
+Andong-si,26
+Jecheon-si,25
+Boardman,24
+Chungju-si,24
+Hongcheon-gun,24
+Dangjin-si,23
+Shibuya,23
+Yangyang-gun,23
+Gimcheon-si,22
+Jincheon-gun,22
+Chiyoda City,20
+Hong Kong,19
+Jinju-si,19
+Shinagawa City,19
+Hongseong-gun,18
+Nonsan-si,18
+Boryeong-si,15
+Buyeo-gun,15
+Sangju-si,15
+Yesan-gun,15
+Nagoya,14
+Yeosu-si,14
+Geoje-si,13
+Jeongeup-si,13
+Calpella,12
+Cheorwon-gun,12
+Eumseong-gun,12
+Fukuoka,12
+Miryang-si,12
+Muan-gun,12
+Ota City,12
+Geochang-gun,11
+Namwon-si,11
+Goseong-gun,10
+London,10
+Naju-si,10
+Shanghai,10
+Chuo City,9
+Mokpo-si,9
+Saitama,9
+Sapporo,9
+Taebaek-si,9
+Yeongdong-gun,9
+Changnyeong-gun,8
+Da Nang,8
+Dongguan,8
+Gwangyang-si,8
+Inje-gun,8
+Koto City,8
+Kyoto,8
+Los Angeles,8
+Mungyeong-si,8
+Namhae-gun,8
+Narita,8
+New York,8
+Sagamihara,8
+Santa Clara,8
+Sydney,8
+Taean-gun,8
+Wanju-gun,8
+Yeongcheon-si,8
+Amsterdam,7
+Bucharest,7
+Cheongdo-gun,7
+Hoengseong-gun,7
+Jeongseon-gun,7
+Kawasaki,7
+Okcheon-gun,7
+Wando-gun,7
+Yeongwol-gun,7
+Bangkok,6
+Cheongyang-gun,6
+Geumsan-gun,6
+Gimje-si,6
+Haman-gun,6
+Hapcheon-gun,6
+Ho Chi Minh City,6
+Hwasun-gun,6
+Jakarta,6
+Jangsu-gun,6
+Jeungpyeong-gun,6
+Kawagoe,6
+Kita City,6
+Samcheok-si,6
+San Francisco,6
+San Jose,6
+Seattle,6
+Sendai,6
+Setagaya City,6
+Toronto,6
+Yeongam-gun,6
+Boeun-gun,5
+Bonghwa-gun,5
+Buan-gun,5
+Chiba,5
+Gangjin-gun,5
+Gochang-gun,5
+Gunwi-gun,5
+Gurye-gun,5
+Kashiwa,5
+Kumagaya,5
+Miami,5
+Nerima City,5
+Sacheon-si,5
+Suginami City,5
+Tongyeong-si,5
+Yeonggwang-gun,5
+Aalborg,4
+Adachi City,4
+Boseong-gun,4
+Cupertino,4
+Edogawa City,4
+Goesan-gun,4
+Haenam-gun,4
+Kobe,4
+Paris,4
+Portland,4
+Seocheon-gun,4
+Shenzhen,4
+Soka,4
+Taito City,4
+Yokosuka,4
+Atsugi,3
+Ayase,3
+Cheongsong-gun,3
+Dallas,3
+Damyang-gun,3
+Guangzhou,3
+Gyeryong-si,3
+Hadong-gun,3
+Hanoi,3
+Hiroshima,3
+Kuala Lumpur,3
+Lille,3
+Machida,3
+Mito,3
+Muju-gun,3
+Naaldwijk,3
+Nha Trang,3
+Niigata,3
+Niiza,3
+North Bergen,3
+Phan Thiet,3
+Sakai,3
+Sunchang-gun,3
+Takasaki,3
+Toshima City,3
+Uljin-gun,3
+Warsaw,3
+Yamato,3
+Yashio,3
+Arakawa City,2
+Atlanta,2
+Barcelona,2
+Beijing,2
+Beppu,2
+Berlin,2
+Bunkyo City,2
+Chofu,2
+Cotai,2
+Danyang-gun,2
+Doha,2
+Frankfurt am Main,2
+Ginowan,2
+Gokseong-gun,2
+Hachioji,2
+Hampyeong-gun,2
+Hamyang-gun,2
+Hialeah Gardens,2
+Higashimurayama,2
+Honjo,2
+Ibaraki,2
+Kasugai,2
+Kawaguchi,2
+Kodaira,2
+Kurashiki,2
+Los Altos,2
+Los Gatos,2
+Matsuyama,2
+Mobara,2
+Nakano City,2
+Nara,2
+Narashino,2
+Nashville,2
+Nishinomiya,2
+Odesa,2
+Okegawa,2
+Phoenix,2
+Qingdao,2
+Saratoga,2
+Seongju-gun,2
+Sunnyvale,2
+Taoyuan District,2
+Thuan An,2
+Toda,2
+Toyota,2
+Tsukuba,2
+Utsunomiya,2
+Vientiane,2
+Wuxi,2
+Yecheon-gun,2
+Zagreb,2
+Ageo,1
+Amagasaki,1
+Asaka,1
+Ashikaga,1
+Ashiya,1
+Auckland,1
+Bac Ninh,1
+Baltimore,1
+Bangi,1
+Bayingolin Mongol Autonomous Prefecture,1
+Ben Cat,1
+Brisbane,1
+Cebu City,1
+Changchun,1
+Chatan,1
+Chengdu,1
+Chicago,1
+Chongqing,1
+Colombo,1
+Cork,1
+Dayuan District,1
+Da’an District,1
+Depok,1
+Florence,1
+Frankfurt,1
+Fuji,1
+Fujisawa,1
+Fujiyoshida,1
+Fukushima,1
+Funabashi,1
+Fuzhou,1
+Gildersome,1
+Glenview,1
+Goheung-gun,1
+Goryeong-gun,1
+Haiphong,1
+Hakodate,1
+Hamamatsu,1
+Hangzhou,1
+Harlington,1
+Hayama,1
+Himeji,1
+Hino,1
+Hoi An,1
+Honolulu,1
+Houston,1
+Hue,1
+Hwacheon-gun,1
+Ichihara,1
+Imsil-gun,1
+Inzai,1
+Isesaki,1
+Ishigaki,1
+Itabashi City,1
+Itami,1
+Itoman,1
+Itoshima,1
+Izumi,1
+Jangseong-gun,1
+Jinan-gun,1
+Jindo-gun,1
+Joetsu,1
+Kainan,1
+Kasai,1
+Kasama,1
+Kathmandu,1
+Katsushika City,1
+Khabarovsk,1
+Kitakyushu,1
+Koganei,1
+Kokubunji,1
+Komae,1
+Komoro,1
+Kormend,1
+Koshigaya,1
+Kota Kinabalu,1
+Kumamoto,1
+Lacey,1
+Ladispoli,1
+Maebashi,1
+Mai Khao,1
+Manchester,1
+Mashiko,1
+Matsubara,1
+Matsudo,1
+Matsumoto,1
+Matsusaka,1
+Meguro City,1
+Melbourne,1
+Milan,1
+Monte Sereno,1
+Mumbai,1
+Musashino,1
+Nagano,1
+Nagasaki,1
+Nairobi,1
+Nakhon Ratchasima,1
+Nishiwaki,1
+Nizhny Novgorod,1
+Nong Prue,1
+Northbrook,1
+Novosibirsk,1
+Okazaki,1
+Old Bridge,1
+Olympia,1
+Ota,1
+Otsu,1
+Pa Tong,1
+Palisades Park,1
+Pekanbaru,1
+Perth,1
+Piscataway,1
+Reading,1
+Redondo Beach,1
+Rome,1
+Rustington,1
+Sacramento,1
+Saint-Denis,1
+Sancheong-gun,1
+Sano,1
+Sao Paulo,1
+SeaTac,1
+Shizuoka,1
+Slough,1
+South Croydon,1
+Split,1
+Suita,1
+Sumida City,1
+Surabaya,1
+Swindon,1
+Szentgotthard,1
+Tachikawa,1
+Taiyuan,1
+Taizhou,1
+Tajiri,1
+Takamatsu,1
+Takatsuki,1
+Tama,1
+Tay Ninh,1
+Tel Aviv-Yafo,1
+Thu Dau Mot,1
+Toyama,1
+Ubud,1
+Ulleung-gun,1
+Upper Arlington,1
+Venice,1
+Wakayama,1
+Yanbian Korean Autonomous Prefecture,1
+Yanggu-gun,1
+Yeongdeok-gun,1
+Zama,1
+Zhongzheng District,1
+Zhuhai,1
+
+#  
+# 시작일: 20250101
+# 종료일: 20251125
+잠재고객 이름,활성 사용자
+All Users,8852

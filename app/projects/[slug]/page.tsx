@@ -1,44 +1,44 @@
-import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { ProjectDetail } from '@/components/ProjectDetail';
-import { getProjectBySlug, getProjectDeepDive, getProjects } from '@/lib/content';
+import { getProjects } from '@/lib/content';
+import { ProjectDetailPage } from '@/components/ProjectDetailPage';
 
-export const dynamic = 'force-dynamic';
-
-interface ProjectDetailPageProps {
+interface ProjectPageProps {
   params: { slug: string };
 }
 
-export async function generateStaticParams() {
+export default async function ProjectPage({ params }: ProjectPageProps) {
   const projects = await getProjects();
-  return projects.map((project) => ({ slug: project.slug }));
-}
+  const project = projects.find((p) => p.slug === params.slug);
 
-export async function generateMetadata({ params }: ProjectDetailPageProps): Promise<Metadata> {
-  const project = await getProjectBySlug(params.slug);
-  if (!project) {
-    return { title: 'Project Not Found' };
-  }
-
-  const title = `${project.name} · 프로젝트 경험`;
-  return {
-    title,
-    description: project.summary,
-  };
-}
-
-export default async function ProjectDetailPage({ params }: ProjectDetailPageProps) {
-  const [project, deepDive] = await Promise.all([
-    getProjectBySlug(params.slug),
-    getProjectDeepDive(params.slug),
-  ]);
   if (!project) {
     notFound();
   }
 
-  return (
-    <div className="space-y-12">
-      <ProjectDetail project={project} deepDive={deepDive} />
-    </div>
-  );
+  return <ProjectDetailPage project={project} />;
+}
+
+// Generate static params for better performance
+export async function generateStaticParams() {
+  const projects = await getProjects();
+
+  return projects.map((project) => ({
+    slug: project.slug,
+  }));
+}
+
+// Generate metadata for SEO
+export async function generateMetadata({ params }: ProjectPageProps) {
+  const projects = await getProjects();
+  const project = projects.find((p) => p.slug === params.slug);
+
+  if (!project) {
+    return {
+      title: 'Project Not Found',
+    };
+  }
+
+  return {
+    title: `${project.name} | Portfolio`,
+    description: project.summary,
+  };
 }

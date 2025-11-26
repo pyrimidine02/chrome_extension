@@ -30,10 +30,10 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="ko">
-      <body className="bg-secondary">
+      <body className="bg-gradient-to-br from-secondary-50 via-white to-secondary-50 min-h-screen">
         <Providers>
           <SiteHeader />
-          <main className="mx-auto max-w-6xl space-y-16 px-6 py-16">{children}</main>
+          <main className="space-y-0">{children}</main>
         </Providers>
       </body>
     </html>

@@ -6,10 +6,8 @@ import type {
   Honor,
   Profile,
   ProjectExperience,
-  ProjectDeepDive,
   ResearchExperience,
-  ToyProject,
-  ToyProjectDeepDive,
+  SkillCategory,
 } from '@/lib/types';
 
 const CONTENT_DIR = path.join(process.cwd(), 'content');
@@ -49,16 +47,16 @@ export const getResearchExperience = () => loadYaml<ResearchExperience[]>('exper
 export const getProjects = () => loadYaml<ProjectExperience[]>('projects.yml');
 
 /**
- * Retrieves toy or hobby project entries. (EN)
- * 토이/취미 프로젝트 데이터를 반환합니다. (KO)
- */
-export const getToyProjects = () => loadYaml<ToyProject[]>('toy-projects.yml');
-
-/**
  * Retrieves awards and honors. (EN)
  * 수상 및 성과 이력을 반환합니다. (KO)
  */
 export const getHonors = () => loadYaml<Honor[]>('honors.yml');
+
+/**
+ * Retrieves skill categories used in the tech stack section. (EN)
+ * 기술 스택 섹션에서 사용하는 스킬 묶음을 반환합니다. (KO)
+ */
+export const getSkills = () => loadYaml<SkillCategory[]>('skills.yml');
 
 /**
  * Finds a project experience by slug. (EN)
@@ -67,38 +65,4 @@ export const getHonors = () => loadYaml<Honor[]>('honors.yml');
 export async function getProjectBySlug(slug: string) {
   const projects = await getProjects();
   return projects.find((project) => project.slug === slug) ?? null;
-}
-
-/**
- * Finds a toy project by slug. (EN)
- * 슬러그로 토이 프로젝트를 조회합니다. (KO)
- */
-export async function getToyProjectBySlug(slug: string) {
-  const toyProjects = await getToyProjects();
-  return toyProjects.find((project) => project.slug === slug) ?? null;
-}
-
-/**
- * Retrieves deep-dive content for projects. (EN)
- * 프로젝트 심층 콘텐츠를 조회합니다. (KO)
- */
-export const getProjectDeepDives = () => loadYaml<{ projects: ProjectDeepDive[]; 'toy-projects': ToyProjectDeepDive[] }>('project-details.yml');
-
-/**
- * Finds deep-dive data for a project by slug. (EN)
- * 프로젝트 슬러그로 심층 데이터를 조회합니다. (KO)
- */
-export async function getProjectDeepDive(slug: string) {
-  const { projects } = await getProjectDeepDives();
-  return projects.find((entry) => entry.slug === slug) ?? null;
-}
-
-/**
- * Finds deep-dive data for a toy project by slug. (EN)
- * 토이 프로젝트 슬러그로 심층 데이터를 조회합니다. (KO)
- */
-export async function getToyProjectDeepDive(slug: string) {
-  const data = await getProjectDeepDives();
-  const toyProjects = data['toy-projects'];
-  return toyProjects.find((entry) => entry.slug === slug) ?? null;
 }

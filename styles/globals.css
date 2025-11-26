@@ -7,21 +7,21 @@
 }
 
 body {
-  @apply bg-secondary text-ink font-sans antialiased;
+  @apply bg-white text-secondary-900 font-sans antialiased;
 }
 
 a {
-  @apply text-primary transition-colors duration-150 ease-out;
+  @apply text-primary-600 transition-colors duration-150 ease-out;
 }
 
 a:hover {
-  @apply text-primary/80;
+  @apply text-primary-700;
 }
 
 .section-title {
-  @apply text-3xl font-semibold tracking-tight text-ink;
+  @apply text-3xl font-semibold tracking-tight text-secondary-900;
 }
 
 .section-subtitle {
-  @apply text-base text-slate;
+  @apply text-base text-secondary-600;
 }

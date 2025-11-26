@@ -60,19 +60,15 @@ export interface ProjectExperience {
   contributions: string[];
   outcomes?: string[];
   links?: ProfileLink[];
-}
-
-/**
- * Smaller experimental or hobby project entry. (EN)
- * 실험적이거나 취미 성격의 토이 프로젝트 항목입니다. (KO)
- */
-export interface ToyProject {
-  slug: string;
-  name: string;
-  period: string;
-  summary: string;
-  contributions: string[];
-  links?: ProfileLink[];
+  cover?: string;
+  metrics?: { label: string; value: string }[];
+  techStack?: {
+    backend?: string[];
+    database?: string[];
+    security?: string[];
+    monitoring?: string[];
+    development?: string[];
+  };
 }
 
 /**
@@ -87,41 +83,11 @@ export interface Honor {
 }
 
 /**
- * Media asset reference for architectural narratives. (EN)
- * 아키텍처 서술에 사용하는 미디어 자원 정보를 담습니다. (KO)
+ * Represents a grouped set of skills for the tech stack section. (EN)
+ * 기술 스택 섹션에서 사용하는 스킬 묶음을 나타냅니다. (KO)
  */
-export interface DetailMedia {
-  src: string;
-  alt: string;
-}
-
-/**
- * Rich text section used when narrating a project deep dive. (EN)
- * 프로젝트 심층 소개에 사용하는 서술 섹션입니다. (KO)
- */
-export interface DetailSection {
-  title: string;
+export interface SkillCategory {
+  name: string;
   description?: string;
-  bullets?: string[];
-  media?: DetailMedia;
-}
-
-/**
- * Additional architecture-first context for a project. (EN)
- * 아키텍처 중심의 프로젝트 심층 정보를 담고 있습니다. (KO)
- */
-export interface ProjectDeepDive {
-  slug: string;
-  architecture: DetailSection;
-  sections?: DetailSection[];
-}
-
-/**
- * Extended walkthrough content for toy projects. (EN)
- * 토이 프로젝트에 대한 확장 설명 콘텐츠입니다. (KO)
- */
-export interface ToyProjectDeepDive {
-  slug: string;
-  architecture: DetailSection;
-  sections?: DetailSection[];
+  skills: string[];
 }
