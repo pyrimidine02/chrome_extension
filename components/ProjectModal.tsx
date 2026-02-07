@@ -159,11 +159,11 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                       기술 스택
                     </h3>
                     <div className="flex flex-wrap gap-2">
-                      {project.slug === 'railnetwork' ? [
-                        'Node.js', 'Express.js', 'gRPC', 'MongoDB', 'Redis', 'Winston', 'Docker',
+                      {(project.slug === 'railnetwork' ? [
+                        'Node.js', 'Express.js', 'gRPC', 'MongoDB', 'Redis', 'JWT', 'HMAC-SHA256', 'Flutter', 'Winston', 'Firebase Analytics', 'Docker', 'Swagger',
                       ] : [
-                        'Kotlin', 'Spring Boot', 'PostgreSQL', 'PostGIS', 'Redis', 'Cloudflare R2', 'Docker',
-                      ].map((tech) => (
+                        'Kotlin', 'Spring Boot 3', 'Spring Modulith', 'PostgreSQL', 'Hibernate Spatial', 'Redis', 'Resilience4j', 'JWT', 'OAuth2', 'Flyway', 'HikariCP', 'Caffeine', 'Prometheus', 'Cloudflare R2', 'Testcontainers', 'Docker', 'OpenAPI 3.0',
+                      ]).map((tech) => (
                         <span
                           key={tech}
                           className="px-3 py-1 bg-primary-500/10 border border-primary-500/20 text-primary-400 text-sm rounded-full"
@@ -185,8 +185,8 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                         <h4 className="text-lg font-semibold text-primary-400 mb-3">아키텍처 설계</h4>
                         <p className="text-secondary-300 leading-relaxed">
                           {project.slug === 'railnetwork' ?
-                            '20개 지하철 노선의 실시간 데이터를 처리하는 고성능 백엔드 시스템을 설계했습니다. Express.js 기반의 RESTful API와 gRPC 서버를 병행 운영하며, Redis 캐싱과 MongoDB를 활용한 데이터 지속성을 구현했습니다.' :
-                            'Spring Boot 3.x 기반의 DDD(Domain-Driven Design) 아키텍처를 적용해 멀티 프로젝트 관리가 가능한 확장 가능한 백엔드를 구축했습니다. PostGIS를 활용한 공간 데이터 처리와 Caffeine/Redis 이중 캐시 구조로 고성능을 달성했습니다.'
+                            '열차위치조회·편성정보·운행계획·크라우드소싱 4개 서비스 도메인으로 설계한 고성능 백엔드 시스템입니다. SMSS 실패 시 열린데이터 API로 자동 폴백하는 이중 API 폴백 시스템을 구축하고, Express.js RESTful API와 gRPC 서버를 병행 운영합니다. Redis 캐싱과 MongoDB로 데이터 지속성을 확보하며, Firebase Analytics로 지역별 사용자 분포(서울 68%, 경기 22%)를 분석합니다.' :
+                            'Spring Modulith 이벤트 드리븐 Modulith 아키텍처로 identity·place·event·social·analytics 5개 도메인을 느슨한 결합으로 분리했습니다. Hibernate Spatial + JTS 기반 지리공간 처리, Caffeine/Redis 이중 캐시, Cloudflare R2 비용 보호(일일 대역폭/월간 요청 제한, 긴급 차단 임계값)로 안정적인 서비스를 운영합니다.'
                           }
                         </p>
                       </div>
@@ -195,8 +195,8 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                         <h4 className="text-lg font-semibold text-accent-400 mb-3">성능 최적화</h4>
                         <p className="text-secondary-300 leading-relaxed">
                           {project.slug === 'railnetwork' ?
-                            'Promise.all을 활용한 병렬 API 호출로 업데이트 시간을 75% 단축하고, 압축 미들웨어 적용으로 네트워크 트래픽을 40% 절감했습니다. Redis 캐싱을 통해 평균 응답시간을 50ms 이하로 유지했습니다.' :
-                            'PostGIS의 geography 타입과 GIST 인덱스를 활용해 공간 쿼리 성능을 최적화했습니다. 배열 컬럼과 GIN 인덱스를 조합한 읽기 최적화로 대용량 데이터 처리 성능을 향상시켰습니다.'
+                            'Promise.all 기반 병렬 API 호출로 전체 노선 업데이트 시간을 75% 단축하고, 압축 미들웨어 적용으로 네트워크 트래픽을 40% 절감했습니다. Redis 캐싱을 통해 평균 응답시간 150ms 이하, 99.5% 가용성을 달성하며 일 평균 1,400+ DAU를 안정적으로 처리합니다.' :
+                            'Resilience4j 서킷 브레이커로 외부 서비스 장애 전파를 차단하고, Caffeine/Redis 이중 캐시와 GIST/GIN 인덱스 조합으로 공간 쿼리와 대용량 필터링 성능을 최적화했습니다. Flyway 마이그레이션과 HikariCP 커넥션 풀 최적화로 DB 운영 안정성을 확보하고, Prometheus + Actuator로 실시간 관측성을 유지합니다.'
                           }
                         </p>
                       </div>

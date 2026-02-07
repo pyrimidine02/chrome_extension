@@ -15,26 +15,35 @@ export function ResearchSection() {
       description: 'Portable ECG Monitor on Edge Device using TensorFlow Lite',
       period: '2023',
       type: '논문 연구',
-      details: '모바일 ECG 모니터링 시스템 개발에 기여, TensorFlow Lite 모델 최적화를 통해 실시간 심전도 신호 분석 성능 30% 향상',
+      details: 'MIT-BIH 부정맥 데이터 전처리, CNN 모델 설계, TensorFlow Lite 8-bit 양자화로 2.4MB→503KB 경량화 및 Arduino Nano 33 BLE 엣지 디바이스 배포',
       fullDetails: {
         overview: 'TensorFlow Lite를 활용한 엣지 디바이스 기반 휴대용 심전도 모니터링 시스템 개발 연구입니다. 심혈관 질환의 조기 진단을 위해 AI 기술을 Arduino Nano 33 BLE Sense와 같은 제한된 자원의 엣지 디바이스에 구현했습니다.',
         contributions: [
           {
             title: '데이터 전처리',
             items: [
-              'MIT-BIH 부정맥 데이터베이스에서 QRS 파형 추출 및 전처리',
-              '심전도 신호에서 QRS 복합체 중심으로 85픽셀(좌측), 15픽셀(우측) 크롭핑',
-              '96x96 크기 이미지로 리사이징 및 그레이스케일 변환',
-              '정상(N)과 심실조기수축(PVC) 데이터 분류 및 노이즈 데이터 처리',
+              'MIT-BIH 부정맥 데이터베이스에서 QRS 파형 정점(높이 1250–1500, 간격 200) 식별 및 추출',
+              'QRS 복합체 중심으로 좌측 85px, 우측 15px 크롭 후 96×96 이미지로 리사이징',
+              '정상(N), 심실조기수축(PVC), 노이즈 데이터 분류 및 MLII 리드 타입 기반 전처리',
+              'R-wave 중심 정렬, 12-bit 해상도 데이터를 96 단계로 다운스케일링 및 그레이스케일 변환',
             ],
           },
           {
-            title: '모델 경량화 및 파인튜닝',
+            title: '모델링',
             items: [
-              '초기 32필터 모델(2.4MB)에서 3필터 모델(503KB)로 경량화',
-              'TensorFlow Lite 양자화를 통한 8비트 정수 포맷 변환',
-              '개인별 심전도 데이터로 재학습을 통한 성능 향상',
-              'TF Lite 모델 정확도: 53.75% → 83.55%로 개선',
+              'CNN 모델 설계: 2개 합성곱 계층(3×3 커널, 8필터) + 2개 풀링 계층 + FC(Flatten-ReLU-Softmax)',
+              'Adam 옵티마이저와 categorical_crossentropy 손실 함수를 적용한 다중 클래스 분류 학습',
+              '입력 크기 96×96, 필터 수 최적화 실험을 통해 정확도와 경량화 간 최적 균형점 탐색',
+              'Base 모델(32필터) 정확도 99.23%, 경량 모델(8필터) 정확도 88.72% 달성',
+            ],
+          },
+          {
+            title: '모델 경량화',
+            items: [
+              'TensorFlow Lite 변환 및 8-bit 정수 양자화로 모델 크기 2.4MB → 503KB (79% 축소)',
+              'FlatBuffer 포맷 활용으로 메모리 사용량 최적화, Arduino Nano 33 BLE(1MB 플래시) 배포 성공',
+              '개인 ECG 데이터 재학습을 통해 TF Lite 모델 정확도 53.75% → 83.55%로 개선',
+              '1-bit BMP 변환 검증 프로세스로 부정맥/정상 데이터 교차 검증 수행',
             ],
           },
         ],

@@ -11,7 +11,7 @@ interface IntroProps {
  */
 export function Intro({ profile }: IntroProps) {
   const initials = profile.name.split(' ').map((part) => part[0]).join('');
-  const highlightTags = ['RailNetwork Control', 'Girls Band Tabi'];
+  const highlightTags = ['RailNetwork - Production', 'Girls Band Tabi - Server Live', '6,375 Users', '99.5% Uptime'];
 
   return (
     <section

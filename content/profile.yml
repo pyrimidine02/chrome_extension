@@ -1,8 +1,9 @@
 name: "손호영"
 title: "Backend & Platform Engineer"
 summary: |
-  8,852명이 사용하는 서울 지하철 실시간 추적 서비스와 위치 기반 성지순례 플랫폼을 설계·구축한 엔지니어입니다.
-  RailNetwork로 25M+ 이벤트를 처리하는 고성능 백엔드를, Girls Band Tabi로 180+ API의 확장 가능한 LBS 시스템을 완성했습니다.
+  6,375명의 활성 사용자와 12M+ 이벤트를 처리하는 서울 지하철 실시간 추적 서비스와 위치 기반 성지순례 플랫폼을 설계·구축한 엔지니어입니다.
+  RailNetwork로 일 평균 1,400+ DAU · 99.5% 가용성의 프로덕션 백엔드를, Girls Band Tabi로 259개 API · Spring Modulith 이벤트 드리븐 LBS 플랫폼을 완성했습니다. (GBT: 서버 운영 중, 앱 내부 테스트)
+  이중 API 폴백·병렬 처리·서킷 브레이커 등 장애 내성 설계와, Firebase Analytics·Prometheus 기반 데이터 드리븐 운영이 강점입니다.
 location: "인천, 대한민국"
 avatar: "/assets/12C4660C-7D19-456B-B73A-B55A9C62C441_1_201_a.jpeg"
 email: "tls1234568@naver.com"
@@ -11,3 +12,5 @@ links:
     url: "https://github.com/pyrimidine02"
   - label: "이력서"
     url: "/cv.pdf"
+  - label: "자기소개서"
+    url: "/cover_letter.pdf"

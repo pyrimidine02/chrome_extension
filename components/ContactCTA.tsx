@@ -166,6 +166,21 @@ export function ContactCTA({ email, links }: ContactCTAProps) {
               </svg>
             </a>
 
+            {/* Cover Letter Download Button */}
+            <a
+              href="/cover_letter.pdf"
+              download="손호영_자기소개서.pdf"
+              className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-secondary-800/50 hover:bg-secondary-700 text-secondary-200 hover:text-white font-semibold rounded-2xl border border-secondary-700/50 hover:border-secondary-600 transition-all duration-300"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
+              </svg>
+              <span>자기소개서 다운로드</span>
+              <svg className="w-4 h-4 transition-transform group-hover:translate-y-1" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </a>
+
             <div className="mt-4 text-center">
               <p className="text-secondary-300 text-sm">
                 응답시간: 24시간 이내

@@ -8,10 +8,10 @@ interface HeroProps {
 }
 
 const metrics = [
-  { label: 'Lines', value: '20+', desc: '지하철 노선', icon: '🚇', gradient: 'from-primary-500 to-primary-700' },
+  { label: 'Users', value: '6,375', desc: '활성 사용자', icon: '👥', gradient: 'from-primary-500 to-primary-700' },
   { label: 'Uptime', value: '99.5%', desc: '서비스 가용성', icon: '🎯', gradient: 'from-success-500 to-success-700' },
-  { label: 'APIs', value: '180+', desc: 'REST 엔드포인트', icon: '🔗', gradient: 'from-accent-500 to-accent-700' },
-  { label: 'Response', value: '40ms', desc: '평균 응답시간', icon: '⚡', gradient: 'from-danger-500 to-danger-700' },
+  { label: 'APIs', value: '259', desc: 'REST 엔드포인트', icon: '🔗', gradient: 'from-accent-500 to-accent-700' },
+  { label: 'DAU', value: '1,400+', desc: '일 평균 활성 사용자', icon: '📊', gradient: 'from-danger-500 to-danger-700' },
 ];
 
 const techIcons = [

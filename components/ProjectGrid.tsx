@@ -129,7 +129,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
                       핵심 기여사항
                     </h4>
                     <div className="space-y-3">
-                      {project.contributions.slice(0, 3).map((contribution, contribIndex) => (
+                      {project.contributions.slice(0, 4).map((contribution, contribIndex) => (
                         <motion.div
                           key={contribIndex}
                           initial={{ opacity: 0, x: -20 }}
@@ -227,7 +227,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
                                   <span className={`w-1.5 h-1.5 rounded-full animate-pulse ${
                                     project.slug === 'girlsbandtabi' ? 'bg-orange-400' : 'bg-success-400'
                                   }`} />
-                                  {project.slug === 'girlsbandtabi' ? 'Development' : 'Production'}
+                                  {project.slug === 'girlsbandtabi' ? 'Server Live' : 'Production'}
                                 </div>
                               </div>
                             </div>
@@ -254,7 +254,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
                                       viewport={{ once: true }}
                                       className="h-8 bg-gradient-to-r from-green-500/25 to-green-600/25 rounded-md border border-green-400/25 flex items-center justify-center backdrop-blur-sm shadow-sm"
                                     >
-                                      <span className="text-[9px] text-green-200 font-medium tracking-wide">PostGIS</span>
+                                      <span className="text-[9px] text-green-200 font-medium tracking-wide">Modulith</span>
                                     </motion.div>
                                     <motion.div
                                       initial={{ opacity: 0, scale: 0 }}
@@ -267,7 +267,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
                                     </motion.div>
                                   </div>
                                   {/* Application Layer */}
-                                  <div className="grid grid-cols-2 gap-2">
+                                  <div className="grid grid-cols-3 gap-2">
                                     <motion.div
                                       initial={{ opacity: 0, scale: 0 }}
                                       whileInView={{ opacity: 1, scale: 1 }}
@@ -284,7 +284,16 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
                                       viewport={{ once: true }}
                                       className="h-8 bg-gradient-to-r from-orange-500/25 to-orange-600/25 rounded-md border border-orange-400/25 flex items-center justify-center backdrop-blur-sm shadow-sm"
                                     >
-                                      <span className="text-[9px] text-orange-200 font-medium tracking-wide">JWT Auth</span>
+                                      <span className="text-[9px] text-orange-200 font-medium tracking-wide">OAuth2</span>
+                                    </motion.div>
+                                    <motion.div
+                                      initial={{ opacity: 0, scale: 0 }}
+                                      whileInView={{ opacity: 1, scale: 1 }}
+                                      transition={{ delay: 1.45, duration: 0.5 }}
+                                      viewport={{ once: true }}
+                                      className="h-8 bg-gradient-to-r from-yellow-500/25 to-yellow-600/25 rounded-md border border-yellow-400/25 flex items-center justify-center backdrop-blur-sm shadow-sm"
+                                    >
+                                      <span className="text-[9px] text-yellow-200 font-medium tracking-wide">Resilience4j</span>
                                     </motion.div>
                                   </div>
                                   {/* API Layer */}
@@ -296,7 +305,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
                                       viewport={{ once: true }}
                                       className="h-8 bg-gradient-to-r from-cyan-500/25 to-cyan-600/25 rounded-md border border-cyan-400/25 flex items-center justify-center backdrop-blur-sm shadow-sm"
                                     >
-                                      <span className="text-[9px] text-cyan-200 font-medium tracking-wide">180+ REST APIs</span>
+                                      <span className="text-[9px] text-cyan-200 font-medium tracking-wide">259 REST APIs</span>
                                     </motion.div>
                                   </div>
                                 </>
@@ -386,7 +395,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
                             <div className="flex justify-between items-end">
                               <div className="space-y-2">
                                 <div className="text-xs text-secondary-300 font-medium">
-                                  {project.slug === 'girlsbandtabi' ? 'API Endpoints' : 'Live Trains'}
+                                  {project.slug === 'girlsbandtabi' ? '5 Modules' : 'Live Trains'}
                                 </div>
                                 <div className="flex gap-1">
                                   {project.slug === 'girlsbandtabi' ? (
@@ -422,7 +431,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
                                   Performance
                                 </div>
                                 <div className="text-sm font-bold text-white">
-                                  {project.slug === 'girlsbandtabi' ? '180+' : '99.5%'}
+                                  {project.slug === 'girlsbandtabi' ? '259 APIs' : '99.5% · 1,400+ DAU'}
                                 </div>
                               </div>
                             </div>

@@ -35,7 +35,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=black,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=blue,
 }
 
@@ -56,43 +56,53 @@
     \end{minipage}
 \end{center}
 
-\vspace{10pt}
+\vspace{6pt}
 
-% --- EDUCATION ---
-\section{Education}
+% --- SUMMARY ---
+\begin{center}
+\textit{6,375명 사용자·1,400+ DAU 프로덕션 서비스를 설계·운영하는 백엔드 엔지니어.} \\[2pt]
+\textit{리버스 엔지니어링 기반 API 복원, 이벤트 드리븐 모듈 아키텍처, 이중 캐시 설계를 통해 실 트래픽 문제를 해결합니다.}
+\end{center}
 
-\entry{인하대학교 (Inha University)}{인천, 대한민국}{컴퓨터공학과 학사 (재학)}{2023.02 -- 현재}
-
-\entry{Google for Developers Machine Learning Bootcamp 2024}{온라인}{수료}{2024}
-
-% --- EXPERIENCE ---
-\section{Experience}
-
-\project{Portable ECG Monitor on Edge Device using TensorFlow Lite}{ISIPS 2023}{논문 기여 및 연구 참여}
-\begin{itemize}
-    \item 부정맥(ECG) 데이터 전처리 수행.
-    \item 경량 모델(TensorFlow Lite) 전처리, 학습 및 검증 과정에 기여.
-\end{itemize}
+\vspace{4pt}
 
 % --- PROJECTS ---
 \section{Projects}
 
-\project{RailNetwork Control}{2023.07 -- 현재}{Lead Engineer}
+\project{RailNetwork}{2023.07 -- 현재}{Lead Engineer}
 \begin{itemize}
-    \item 8,852명 활성 사용자가 사용하는 서울 지하철 실시간 추적 서비스 TrainAccAPI 백엔드 설계·구축.
-    \item 20개 노선, 2,000여 대 열차를 15초 주기로 실시간 추적하며, 25M+ 이벤트 처리.
-    \item 코레일 API 복원 및 폴백 시스템 구축, 평균 응답시간 150ms, 크로스 플랫폼 서비스 제공.
-    \item Tech: Node.js, Express.js, gRPC, MongoDB, Redis, Winston. \href{https://www.railnetwork.kr/}{서비스}
+    \item 공식 API 미제공 환경에서 Proxyman 리버스엔지니어링으로 SMSS API를 복원하고, SMSS 장애 시 열린데이터 API로 자동 전환하는 이중 폴백 시스템 구축.
+    \item Promise.all 병렬 처리로 전체 노선 동시 업데이트, Redis 캐싱으로 응답 성능 최적화.
+    \item 20개 노선 2,000여 대 열차를 15초 주기로 실시간 추적하는 백엔드 설계·구축, \textbf{6,375명 사용자·12M+ 이벤트} 처리. (2025.11--2026.02 기준)
+    \item Firebase Analytics 지역 분석(서울 68\%, 경기 22\%)을 통한 데이터 기반 의사결정, 일 평균 \textbf{1,400+ DAU}.
+    \item 크라우드소싱 편성 투표 시스템 설계, Flutter 기반 Android/iOS 크로스 플랫폼 제공.
+    \item Tech: Node.js, Express.js, gRPC, MongoDB, Redis, JWT, HMAC-SHA256, Flutter. \href{https://www.railnetwork.kr/}{서비스}
 \end{itemize}
 
 \vspace{6pt}
 
-\project{Girls Band Tabi LBS Platform}{2025.08 -- 현재}{Founding Engineer}
+\project{Girls Band Tabi \textnormal{\small(서버 운영 중, 앱 내부 테스트)}}{2025.08 -- 현재}{Founding Engineer}
 \begin{itemize}
-    \item Kotlin + Spring Boot 3 + PostGIS 기반 위치기반 서비스로 밴드 성지순례 플랫폼 설계·구축.
-    \item 180+ REST API 엔드포인트, PostGIS 공간 쿼리 최적화, JWT/RBAC 다층 보안 구현.
-    \item 프로젝트·유닛·지역 계층 구조와 DDD 모듈 아키텍처로 멀티테넌트 시스템 설계.
-    \item Tech: Kotlin, Spring Boot 3, PostgreSQL 15, PostGIS 3.3, Redis. \href{https://github.com/pyrimidine02/oshitabi}{깃허브}
+    \item Kotlin + Spring Boot 3 + Spring Modulith 이벤트 드리븐 아키텍처로 5개 도메인(identity·place·event·social·analytics)을 느슨한 결합으로 분리한 위치 기반 플랫폼 설계·구축.
+    \item OAuth2(Google/Apple) + JWT + 이메일 인증 다중 인증 체계, Resilience4j 서킷 브레이커 + Anti-tamper 위치 검증으로 보안 다층 방어.
+    \item Caffeine L1 / Redis L2 이중 캐시 + cache-aside 패턴으로 읽기 최적화, 도메인 단위 캐시 키로 정밀 무효화 설계.
+    \item Cloudflare R2 비용 보호(일일 대역폭/월간 요청 제한), Flyway 마이그레이션, HikariCP 커넥션 풀 최적화로 인프라 안정성 확보.
+    \item Detekt/Ktlint 정적 분석 + Kover 커버리지(서비스 계층 80\% 목표) CI 파이프라인 통합, 코드 품질 게이트 자동화.
+    \item Tech: Kotlin, Spring Boot 3, Spring Modulith, PostgreSQL, Hibernate Spatial, Redis, Resilience4j, Prometheus. \href{https://github.com/pyrimidine02/girlsbandtabi}{깃허브}
+\end{itemize}
+
+% --- TECHNICAL SKILLS ---
+\section{Technical Skills}
+\begin{itemize}
+    \item \textbf{Languages:} Kotlin, Python, JavaScript (Node.js), C++, Dart (Flutter)
+    \item \textbf{Backend:} Spring Boot 3, Spring Modulith, Express.js, gRPC, Resilience4j
+    \item \textbf{Database \& Cache:} PostgreSQL/Hibernate Spatial, MongoDB, Redis, Flyway, HikariCP
+    \item \textbf{Infra \& DevOps:} Docker, Cloudflare R2, AWS, Prometheus, Testcontainers, CI/CD (Detekt/Ktlint/Kover)
+    \item \textbf{Problem Solving:}
+    \begin{itemize}[label=$\circ$]
+        \item Solved.ac (Baekjoon): Platinum IV (Rating: 1774)
+        \item Codeforces: Pupil (Rating: 1214)
+    \end{itemize}
 \end{itemize}
 
 % --- HONORS AND AWARDS ---
@@ -104,6 +114,23 @@
 \textbf{Top 3.7\%} & Kaggle Binary Classification of Insurance Cross Selling (83등/2,236팀) & 2024.11 \\
 \textbf{교내 3등} & ICPC Seoul Regional 교내 예선 & 2023.10 \\
 \end{tabularx}
+
+% --- EDUCATION ---
+\section{Education}
+
+\entry{인하대학교 (Inha University)}{인천, 대한민국}{컴퓨터공학과 학사 (재학)}{2023.02 -- 현재}
+
+\entry{Google for Developers Machine Learning Bootcamp 2024}{온라인}{수료}{2024}
+
+% --- EXPERIENCE ---
+\section{Experience}
+
+\project{Portable ECG Monitor on Edge Device using TensorFlow Lite}{ISIPS 2023}{데이터 전처리, 모델링, 모델 경량화 담당}
+\begin{itemize}
+    \item MIT-BIH 부정맥 데이터베이스에서 QRS 파형 정점 식별, 96$\times$96 이미지 리사이징, R-wave 중심 정렬 및 그레이스케일 변환 등 ECG 데이터 전처리 파이프라인 구축.
+    \item CNN 모델(Conv2 + Pool2 + FC) 설계 및 학습, TensorFlow Lite 8-bit 양자화로 모델 크기를 2.4\,MB에서 503\,KB로 경량화하여 Arduino Nano 33 BLE에 배포.
+    \item 개인 ECG 데이터 재학습으로 TF Lite 모델 정확도를 53.75\%에서 83.55\%로 개선.
+\end{itemize}
 
 % --- CLUB ACTIVITIES ---
 \section{Club Activities}
@@ -123,22 +150,6 @@
 \end{itemize}
 \vspace{4pt}
 
-\project{밴드 동아리}{}{기타(Guitar) 세션 담당}
-
-% --- TECHNICAL SKILLS ---
-\section{Technical Skills}
-\begin{itemize}
-    \item \textbf{Core Languages:} Python, Kotlin, JavaScript (Node.js), C++, Flutter
-    \item \textbf{Backend Frameworks:} Spring Boot 3, Express.js, gRPC
-    \item \textbf{Database \& Storage:} PostgreSQL/PostGIS, MongoDB, Redis, Flyway
-    \item \textbf{Cloud \& DevOps:} Docker, Cloudflare R2, AWS, HikariCP
-    \item \textbf{Security \& Auth:} JWT, Spring Security, HMAC-SHA256
-    \item \textbf{Machine Learning:} TensorFlow Lite, PyTorch, scikit-learn
-    \item \textbf{Problem Solving:}
-    \begin{itemize}[label=$\circ$]
-        \item Solved.ac (Baekjoon): Platinum IV (Rating: 1774)
-        \item Codeforces: Pupil (Rating: 1214)
-    \end{itemize}
-\end{itemize}
+\project{AiBO!!!!! (BanG Dream! MyGO!!!!! 커버 밴드)}{}{기타(Guitar) 세션 담당}
 
 \end{document}
