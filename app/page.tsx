@@ -15,7 +15,9 @@ export const revalidate = 0;
  * 완전 새로운 디자인의 현대적 개발자 포트폴리오 - 몰입형 풀스크린 경험 (KO)
  */
 export default async function Home() {
-  const [profile, projectItems, skillCategories, educationEntries, achievementHonors] = await Promise.all([
+  const [
+    profile, projectItems, skillCategories, educationEntries, achievementHonors,
+  ] = await Promise.all([
     getProfile(),
     getProjects(),
     getSkills(),
